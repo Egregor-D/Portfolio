@@ -1,0 +1,783 @@
+body{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+	color: #868686;
+	background: #fdfcfb;
+	font-weight: normal;
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+header{
+	margin: 100px 0 80px;
+}
+
+.menu{
+	background: #fefefe;
+	border: 0;
+	box-shadow: 0 0 5px rgba(0, 0, 0, .25);
+	padding: 15px 0;
+}
+
+.navbar-brand {
+	padding-right: 80px;
+}
+.navbar-brand > img {
+	position: relative;
+	top: -49px;
+	border: 2px solid #d42819;
+}
+.navbar-default .navbar-nav > li > a {
+	color: #8d8c8c;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+.navbar-default .navbar-nav > li.active-link > a {
+	border-bottom: 1px solid #d42819;
+	color: #8d8c8c;
+}
+.navbar-default .navbar-nav:not(.icons) > li > a:hover {
+	border-bottom: 1px solid #d42819;
+	color: #8d8c8c;
+}
+.icons > li > a {
+	padding: 15px 5px;
+}
+
+/*.icons {
+	display: none;
+}*/
+.menu .container {
+	position: relative;
+}
+.globe {
+	font-size: 25px;
+	line-height: 50px;
+	position: absolute;
+	right: 25px;
+	cursor: pointer;
+	color: #d0cfce;
+	display: none;
+}
+
+.slogan {
+	margin-bottom: 80px;
+}
+
+.slogan > h1 {
+	margin: 0;
+	text-align: center;
+	font-size: 33px;
+	color: #7e7e7e;
+}
+
+.slogan > h1 > span {
+	color: #d42819;
+}
+
+/* картинки */
+
+.row {
+	background-color: rgba(3,3,3, 0.2);
+	border-radius: 5px;
+}
+
+.card {
+	width: auto;
+	margin: 10px 0;
+	/**/
+	border: 10px solid #fff;
+	overflow: hidden;
+    position: relative;
+    text-align: center;
+    box-shadow: 1px 1px 2px #e6e6e6;
+    cursor: default;
+    /**/
+	background-color: #fff;
+}
+
+/*------1------*/
+
+.card-row {
+	margin: 20px 0;
+}
+
+.card .mask, .card .content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0px;
+    left: 0;
+}
+
+.card img {
+    display: block;
+    position: relative;
+    background-position: center;
+}
+
+.card h2 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    margin: 20px 0 0 0;
+}
+
+.card p {
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 12px;
+    position: relative;
+    color: #fff;
+    /*padding: 10px 20px 20px;*/
+    text-align: center;
+}
+
+.card a.info {
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 14px;
+    background: #000;
+    color: #fff;
+    text-transform: uppercase;
+    box-shadow: 0 0 1px #000;
+}
+
+.card a.info:hover {
+    box-shadow: 0 0 5px #000;
+}
+
+/*------------*/
+
+.card-first img { 
+    transition: all 0.2s linear;
+}
+
+.card-first .mask {
+    opacity: 0;
+    background-color: rgba(212,40,25, 0.3); /* <= красный цвет */
+    transition: all 0.4s ease-in-out;
+}
+
+.card-first h2 {
+    transform: translateY(-100px);
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+.card-first p { 
+    transform: translateY(100px);
+    opacity: 0;
+    transition: all 0.2s linear;
+}
+.card-first a.info{
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+/*------------*/
+
+.card-first:hover img { 
+    transform: scale(1.1);
+} 
+.card-first:hover .mask { 
+    opacity: 1;
+}
+.card-first:hover h2,
+.card-first:hover p,
+.card-first:hover a.info {
+    opacity: 1;
+    transform: translateY(0px);
+}
+.card-first:hover p {
+    transition-delay: 0.1s;
+}
+.card-first:hover a.info {
+    transition-delay: 0.2s;
+}
+
+/*------2------*/
+
+.card-second img {
+	transition: all 0.2s ease-in;
+}
+.card-second .mask {
+	width: 100%;
+	padding: 60px;
+	height: 100%;
+	opacity: 0;
+	transform: translate(265px, 145px) rotate(45deg);
+	transition: all 0.2s ease-in-out;
+}
+.card-second h2 {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+	background: transparent;
+	margin: 20px 40px 0px 40px;
+	transform: translate(200px, -200px);
+	transition: all 0.2s ease-in-out; 
+}
+.card-second p {
+	transform: translate(-200px, 200px);
+	transition: all 0.2s ease-in-out;
+}
+.card-second .info {
+	transform: translate(0px, 100px);
+	transition: all 0.2s 0.1s ease-in-out;
+}
+
+/*------------*/
+
+.card-second:hover .mask {
+	opacity: 1;
+	transform: translate(-80px, -125px) rotate(45deg);
+}
+.card-second:hover h2 {
+	transform: translate(0px,0px);
+    transition-delay: 0.3s; 
+}
+.card-second:hover p { 
+    transform: translate(0px,0px); 
+    transition-delay: 0.4s;
+}
+.card-second:hover a.info { 
+    transform: translate(0px,0px); 
+    transition-delay: 0.5s;
+}
+
+/*------3------*/
+
+.card-third img {   
+    transition: all 0.2s ease-in; 
+}
+.card-third .mask { 
+    background-color: rgba(0,0,0,0.6);
+    opacity: 0;
+    transform: translate(460px, -100px) rotate(180deg);
+    transition: all 0.2s 0.4s ease-in-out;
+}
+.card-third h2{
+    transform: translateY(-100px);
+    transition: all 0.2s ease-in-out;
+}
+.card-third p { 
+    transform: translateX(300px) rotate(90deg);
+    transition: all 0.2s ease-in-out;
+}
+.card-third a.info { 
+    transform: translateY(-200px);
+    transition: all 0.2s ease-in-out;
+}
+
+/*------------*/
+
+.card-third:hover .mask { 
+    opacity:1; 
+    transition-delay: 0s;                            
+    transform: translate(0px, 0px);
+}
+.card-third:hover h2 { 
+    transform: translateY(0px); 
+    transition-delay: 0.5s; 
+}
+.card-third:hover p { 
+    transform: translateX(0px) rotate(0deg);
+    transition-delay: 0.4s;
+}
+.card-third:hover a.info { 
+    transform: translateY(0px);
+    transition-delay: 0.3s;
+}
+
+/*------4------*/
+
+.card-fourth img { 
+    transition: all 0.4s ease-in-out 0.2s;
+    opacity: 1;
+}
+.card-fourth .mask { 
+    background-color: rgba(0,0,0,0.8);
+    opacity: 0;
+    transform: scale(0) rotate(-180deg);
+    transition: all 0.4s ease-in;
+    border-radius: 0px;
+}
+.card-fourth h2{
+    opacity: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    background: transparent;
+    margin: 20px 40px 0px 40px;
+    transition: all 0.5s ease-in-out;
+}
+.card-fourth p { 
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+.card-fourth a.info { 
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+/*------------*/
+
+.card-fourth:hover .mask { 
+    opacity: 1; 
+    transform: scale(1) rotate(0deg);
+    transition-delay: 0.2s;
+}                                 
+.card-fourth:hover img    { 
+    transform: scale(0); 
+    opacity: 0;
+    transition-delay: 0s;
+}                       
+.card-fourth:hover h2,
+.card-fourth:hover p,
+.card-fourth:hover a.info{
+    opacity: 1;
+    transition-delay: 0.5s;
+}
+
+/*------5------*/
+
+.card-fifth img {
+    transition: all 0.3s ease-in-out; 
+}
+.card-fifth .mask { 
+    background-color: rgba(146,96,91,0.3);
+    transform: translateX(-300px);
+    opacity: 1;
+    transition: all 0.4s ease-in-out; 
+}
+.card-fifth h2{
+    background: rgba(255, 255, 255, 0.5);
+    color: #000;
+    box-shadow: 0px 1px 3px rgba(159, 141, 140, 0.5);
+}
+.card-fifth p{
+    opacity: 0;
+    color: #333;
+    transition: all 0.2s linear;
+}
+
+/*------------*/
+
+.card-fifth:hover .mask { 
+    transform: translateX(0px);
+}                       
+.card-fifth:hover img { 
+    transform: translateX(300px);
+    transition-delay: 0.1s;
+}
+.card-fifth:hover p{
+    opacity: 1;
+    transition-delay: 0.4s;
+}
+
+/*------6------*/
+
+.card-sixth img { 
+    transition: all 0.4s ease-in-out 0.5s; 
+}
+.card-sixth .mask{ 
+    background-color: rgba(146,96,91,0.5);
+    opacity:0;
+    transition: all 0.3s ease-in 0.4s;
+}
+.card-sixth h2{
+    opacity:0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    background: transparent;
+    margin: 20px 40px 0px 40px;
+    transform: scale(10);
+    transition: all 0.3s ease-in-out 0.1s;
+}
+.card-sixth p { 
+    opacity:0;
+    transform: scale(10);
+    transition: all 0.3s ease-in-out 0.2s;
+}
+.card-sixth a.info { 
+    opacity:0;
+    transform: translateY(100px);
+    transition: all 0.3s ease-in-out 0.1s;
+}
+
+/*------------*/
+
+.card-sixth:hover .mask {  
+    opacity:1; 
+    transition-delay: 0s;
+}                                                                            
+.card-sixth:hover img { 
+    transition-delay: 0s; 
+}
+.card-sixth:hover h2 { 
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 0.1s;
+}
+.card-sixth:hover p { 
+    opacity:1; 
+    transform: scale(1);
+    transition-delay: 0.2s;
+}
+.card-sixth:hover a.info { 
+    opacity:1;
+    transform: translateY(0px);
+    transition-delay: 0.3s;
+}
+
+/*------7------*/
+
+.card-seventh img{
+    transition: all 0.5s ease-out;
+    opacity: 1;
+}
+.card-seventh .mask { 
+    background-color: rgba(77,44,35,0.5);
+    transform: rotate(0deg) scale(1);
+    opacity: 0;
+    transition: all 0.3s ease-out;
+    transform: translateY(-200px) rotate(180deg);
+}
+.card-seventh h2{
+    transform: translateY(-200px);
+    transition: all 0.2s ease-in-out;
+}
+.card-seventh p { 
+    transform: translateY(-200px);
+    transition: all 0.2s ease-in-out;
+}
+.card-seventh a.info { 
+    transform: translateY(-200px);
+    transition:  all 0.2s ease-in-out;
+}
+
+/*------------*/
+
+.card-seventh:hover img{
+    transform: rotate(720deg) scale(0);
+    opacity: 0;
+}
+.card-seventh:hover .mask { 
+    opacity: 1;  
+    transform: translateY(0px) rotate(0deg);
+    transition-delay: 0.4s;
+}                                                                                       
+.card-seventh:hover h2 { 
+    transform: translateY(0px);
+    transition-delay: 0.7s;
+}
+.card-seventh:hover p { 
+    transform: translateY(0px);
+    transition-delay: 0.6s;
+}
+.card-seventh:hover a.info { 
+    transform: translateY(0px);
+    transition-delay: 0.5s;
+}
+
+/*------8------*/
+
+.card-eighth .mask { 
+    background-color: rgba(255, 255, 255, 0.7);
+    top: -200px;
+    opacity: 0;
+    transition: all 0.3s ease-out 0.5s;
+}
+.card-eighth h2{
+    transform: translateY(-200px);
+    transition: all 0.2s ease-in-out 0.1s;
+}
+.card-eighth p { 
+    color: #333;
+    transform: translateY(-200px);
+    transition: all 0.2s ease-in-out 0.2s;
+}
+.card-eighth a.info { 
+    transform: translateY(-200px);
+    transition:  all 0.2s ease-in-out 0.3s;
+}
+
+/*------------*/
+
+.card-eighth:hover .mask { 
+    opacity: 1; 
+    top: 0px; 
+    transition-delay: 0s; 
+    animation: bounceY 0.9s linear;
+}                                                                                       
+.card-eighth:hover h2 { 
+    transform: translateY(0px);
+    transition-delay: 0.4s;
+}
+.card-eighth:hover p { 
+    transform: translateY(0px);
+    transition-delay: 0.2s;
+}
+.card-eighth:hover a.info { 
+    transform: translateY(0px);
+    transition-delay: 0s;
+}
+
+/*------------*/
+
+@keyframes bounceY {
+    0% { transform: translateY(-205px);}
+    40% { transform: translateY(-100px);}
+    65% { transform: translateY(-52px);}
+    82% { transform: translateY(-25px);}
+    92% { transform: translateY(-12px);}
+    55%, 75%, 87%, 97%, 100% { transform: translateY(0px);}
+}
+
+/*------9------*/
+
+/*.card-ninth .mask-1,
+.card-ninth .mask-2{
+    background-color: rgba(0,0,0,0.5);
+    height: 361px;
+    width: 361px;
+    background: rgba(119,0,36,0.5);
+    opacity: 1;
+    transition: all 0.3s ease-in-out 0.6s;
+}
+.card-ninth .mask-1 { 
+    left: auto;
+    right: 0px;
+    transform: rotate(56.5deg) translateX(-180px);
+    transform-origin: 100% 0%;
+}
+.card-ninth .mask-2 { 
+    top: auto;
+    bottom: 0px;
+    transform: rotate(56.5deg) translateX(180px);
+    transform-origin: 0% 100%;
+}
+
+/*------------*/
+
+.card-ninth .content{
+    background: rgba(0,0,0,0.9);
+    height: 0px;
+    opacity: 0.5;
+    width: 100%;
+    overflow: hidden;
+    transform: rotate(-33.5deg) translate(-112px,166px);
+    transform-origin: 0% 100%;
+    transition: all 0.4s ease-in-out 0.3s;
+}
+.card-ninth h2{
+    background: transparent;
+    margin-top: 5px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+.card-ninth a.info{
+    display: none;
+}
+
+/*------------*/
+
+.card-ninth:hover .content{
+    height: 120px;
+    width: 100%;
+    opacity: 0.9;
+    top: 40px;
+    transform: rotate(0deg) translate(0px,0px);
+}
+.card-ninth:hover .mask-1,
+.card-ninth:hover .mask-2{
+    transition-delay: 0s;
+}
+.card-ninth:hover .mask-1{
+    transform: rotate(56.5deg) translateX(1px);
+}
+.card-ninth:hover .mask-2 {  
+    transform: rotate(56.5deg) translateX(-1px);
+}*/
+
+/*------10------*/
+
+.card-tenth img { 
+    transform: scaleY(1);
+    transition: all 0.7s ease-in-out;
+}
+.card-tenth .mask { 
+    background-color: rgba(255, 231, 179, 0.3); 
+    transition: all 0.5s linear;
+    opacity: 0;
+}   
+.card-tenth h2{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    background: transparent;
+    /*margin: 20px 40px 0px 40px;*/
+    transform: scale(0);
+    color: #333;
+    transition: all 0.5s linear;
+    opacity: 0;
+}
+.card-tenth p {
+    color: #333;
+    opacity: 0;
+    transform: scale(0);
+    transition: all 0.5s linear;
+}
+.card-tenth a.info { 
+    opacity: 0;
+    transform: scale(0);
+    transition: all 0.5s linear;
+}
+
+/*------------*/
+
+.card-tenth:hover img { 
+    transform: scale(2);
+    opacity: 0;
+}
+.card-tenth:hover .mask { 
+    opacity: 1;
+}                                                                            
+.card-tenth:hover h2,
+.card-tenth:hover p,
+.card-tenth:hover a.info{ 
+    transform: scale(1);
+    opacity: 1;
+}
+
+/*------------*/
+
+/*.card-row img {
+	box-shadow: 0 0 52px rgba(0, 0, 0, .25);
+}*/
+
+/*.card-row a:hover img {
+	box-shadow: 0 0 15px rgba(0, 0, 0, 5);
+	transition: all 1s;
+}*/
+
+.nav-pager {
+	text-align: center;
+}
+
+.pagination > li > a, .pagination > li > span {
+	color: #b5b3b3;
+}
+
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover{
+	background-color: #fff;
+	border: 1px solid #ddd;
+	color: #d42819;
+}
+
+footer {
+	margin-bottom: 100px;
+}
+
+footer hr {
+	border-color: #b7b6b6;
+}
+
+/* large Device, Wide Screens */
+@media only screen and (max-width: 1200px) {
+	.navbar-brand {
+		padding-right: 30px;
+	}
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+	.navbar-brand {
+		padding-right: 10px;
+	}
+	.icons {
+		display: none;
+		position: absolute;
+		right: 34px;
+		top: 30px;
+	}
+	.icons > li {
+		float: none;
+	}
+	.icons > li > a {
+		padding: 5px;
+	}
+	.icons > li:first-child {
+		padding-top: 20px;
+
+	}
+	.globe {
+		display: block;
+		margin-bottom: 15px;
+	}
+	.card-row{
+		text-align: center;
+	}
+}
+/* Small Devices, Tablets*/
+@media only screen and (max-width: 767px) {
+	.menu {
+		padding: 0;
+	}
+	.navbar-brand > img {
+		top: -15px;
+		max-height: 50px;
+	}
+	.navbar-nav > li > a {
+		transition: all 1s;
+	}
+	.navbar-default .navbar-nav > li.active-link > a {
+		border-bottom: 0;
+		color: #fff;
+		background-color: #d42819;
+	}
+	.navbar-default .navbar-nav:not(.icons) > li > a:hover {
+		border-bottom: 0;
+		color: #fff;
+		background-color: #d42819; 
+	}
+	.icons {
+		display: block !important;
+		position: relative;
+		right: 0;
+		top: 0;
+	}
+	.icons > li {
+		display: inline-block;
+	}
+	.icons > li:first-child {
+		padding-top: 0px;
+	}
+	.globe {
+		display: none;
+	}
+	.card {
+		margin-bottom: 50px;
+	}
+	.card-row {
+     margin-bottom: 0px; 
+	}
+
+}
+/* ExtranSmall Devices, Phones*/
+@media only screen and (max-width: 480px) {
+	header,
+	.slogan{
+		margin-bottom: 30px;
+	}
+	.slogan h1 {
+		font-size: 20px;
+	}
+
+}
+
+@media only screen and (min-width: 992px) {
+	.icons {
+		display: block !important;
+	}
+}
