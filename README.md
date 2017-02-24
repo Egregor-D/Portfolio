@@ -1,5 +1,5 @@
 <a href="http://egregor.tk" target="_blank">EGREGOR.TK</a>
-<h3>Эгрэгор Дмитрий Александровичь</h3>
+<h3>Эгрэгор Дмитрий Александрович</h3>
 <p><strong>дата рождения:</strong> 8 июля 1985 (31год)</p>
 <p><strong>Город:</strong> Киев</p>
 <p><strong>Подробно:</strong> начал свое обучение Front-End Developer в декабре 2016 года. закончил курсы CodeSpace, Hexlet, HtmlAcademy, DoCode, Magisters.<p>
