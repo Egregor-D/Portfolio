@@ -1,4 +1,4 @@
-<a href="http://egregor.tk" target="_blanck">EGREGOR.TK</a>
+<a href="http://egregor.tk" target="_blank">EGREGOR.TK</a>
 <h3>Эгрэгор Дмитрий Александровичь</h3>
 <p><strong>дата рождения:</strong> 8 июля 1985 (31год)</p>
 <p><strong>Город:</strong> Киев</p>
